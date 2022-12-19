@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
+*{
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    scroll-behavior: smooth; }
+
+    
+
+header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5PX 5px;
+    
+
+
+}
+.khat{
+    margin-top: 78PX;
+    padding: 1PX;
+    background-color: black;
+    width: 100%;
+}
+
+.navigation a{
+    color: black;
+    font-size: 1.7em;
+    font-weight: 500;
+    padding-left: 29px;
+    text-decoration: none;
+    transition: 0.7s ease;
+
+
+}
+
+
+.navigation a:hover{
+    color: RED ;
+}
+
+
+.main{
+    width: 100%;
+    min-height:100vh ;
+    display: flex;
+    align-items: center;
+    background: url(regragui.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: white;
+   font-size: 44PX;
+   font-weight: 200;
+   }
+   .main h2 span{ display: inline-block;
+    margin-top: 10px;
+    font-size: 1em;
+font-weight: 800;
+color: white;
+ }
+
+ .main h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px ;
+    margin-top: 10px;
+    margin-bottom: 30px;
+ }
+
+ .homme{
+    margin-right: 50PX;
+ }
+
+ .homme ::first-letter{
+color: red;
+ }
+ 
+
+ .title{
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    margin-bottom: 50px; }
+
+.image_news{
+    height: 300px;
+    width: 400PX;
+   box-shadow:0 5PX 25PX black;
+    margin-right: 690PX;
+}
+
+
+.cards{
+   
+    min-height: 14em ;
+    height: 19em;
+    overflow: hidden;
+    width: 23em;
+    margin: 20px;
+    transition: 0.7s ease;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+}
+
+.cards p {
+    padding-right: 100PX;
+}
