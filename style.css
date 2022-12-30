@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 *{
-    font-family: 'Patrick Hand', cursive; 
+    font-family: 'Play', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,8 +8,8 @@
 }
 
 header{
-    background: rgb(130,193,39);
-    background: linear-gradient(299deg, rgba(130,193,39,1) 19%, rgba(110,195,34,1) 31%, rgba(175,253,45,1) 100%);
+    background: rgb(23,0,138);
+    background: linear-gradient(299deg, rgba(23,0,138,1) 19%, rgba(18,1,102,1) 31%, rgba(15,2,50,1) 100%);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -51,7 +50,7 @@ section{padding: 100px 200px;}
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(IMAGES/88350.jpg) no-repeat;
+    background: url(adb.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -83,8 +82,8 @@ color: white;
 
  .main-btn{
   color: white;
-  background: rgb(130,193,39);
-background: linear-gradient(299deg, rgba(130,193,39,1) 19%, rgba(110,195,34,1) 31%, rgba(175,253,45,1) 100%);
+  background: rgb(23,0,138);
+  background: linear-gradient(299deg, rgba(23,0,138,1) 19%, rgba(18,1,102,1) 31%, rgba(15,2,50,1) 100%);
   text-decoration: none;
   font-size: 1.1em;
 font-weight: 600;
@@ -97,7 +96,7 @@ transition: 0.7s ease ;
  }
 
 .main-btn:hover {
-    background-color: blue;
+   background:  linear-gradient(299deg, rgba(23,0,138,1) 19%, rgba(18,1,102,1) 31%, rgba(15,2,50,1) 100%);
     transform: scale(1.1);
 }
 
@@ -141,7 +140,7 @@ transition: 0.7s ease ;
 
 
 .icon{
-    color: greenyellow;
+    color: rgb(8, 8, 84);
     font-size: 8em;
     text-align: center;
 }
@@ -151,7 +150,7 @@ transition: 0.7s ease ;
 }
 
 .info h3{
-    color:greenyellow;
+    color: rgb(8, 8, 84);
     font-weight: 700;
     margin: 10px;
 
@@ -168,9 +167,9 @@ transition: 0.7s ease ;
 }
 
 .projects{
-    background: rgb(130,193,39);
-    background: linear-gradient(299deg, rgba(130,193,39,1) 19%, rgba(110,195,34,1) 31%, rgba(175,253,45,1) 100%);}
-
+    background: rgb(23,0,138);
+    background: linear-gradient(299deg, rgba(23,0,138,1) 19%, rgba(18,1,102,1) 31%, rgba(15,2,50,1) 100%);
+ }
 .project-card{
     background-color: white ;
     border: 1px solid white;
@@ -225,8 +224,8 @@ transition: 0.7s ease ;
 .footer{
     text-align: center;
     padding: 2em;
-    background: rgb(130,193,39);
-    background: linear-gradient(299deg, rgba(130,193,39,1) 19%, rgba(110,195,34,1) 31%, rgba(175,253,45,1) 100%);    color: white;
+    background: rgb(23,0,138);
+    background: linear-gradient(299deg, rgba(23,0,138,1) 19%, rgba(18,1,102,1) 31%, rgba(15,2,50,1) 100%);  color: white;
 display: flex;
 justify-content: space-between;
 }
@@ -280,6 +279,44 @@ section{
 }
 
 }
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
 
 @media (max-width:641px){
   body{

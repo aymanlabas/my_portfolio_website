@@ -8,13 +8,14 @@
     <title>My Website</title>
 </head>
 <body>
+    <div class="loader"></div>
     <header>
         <a href="#" class="logo">LABAS.AYMAN</a>
         <nav class="navigation">
-            <a href="#services">services</a>
-            <a href="#project">project</a>
-            <a href="#socialmedia">socialmedia</a>
-            <a href="#contact">contact</a>
+            <a href="#services">Services</a>
+            <a href="#project">Project</a>
+            <a href="#socialmedia">Socialmedia</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header> 
   
@@ -157,5 +158,16 @@
                 <a href="#"><i class="fab fa-github"></i></a>
             </div> 
         </footer>
+
+        <script>window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+          
+            loader.classList.add("loader--hidden");
+          
+            loader.addEventListener("transitionend", () => {
+              document.body.removeChild(loader);
+            });
+          });
+          </script>
 </body>
 </html>
